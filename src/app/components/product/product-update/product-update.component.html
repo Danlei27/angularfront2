@@ -1,0 +1,36 @@
+<mat-card>
+    <mat-card-title>Alterar Usuário</mat-card-title>
+    <form  [formGroup]="form">
+        <mat-form-field>
+            <input formControlName="name" type="text" matInput placeholder="name">
+        </mat-form-field>        
+
+        <mat-form-field>
+            <input formControlName="email" type="email"  matInput placeholder="email">
+        </mat-form-field>        
+
+        <mat-form-field>
+            <input formControlName="date"  type="date" matInput placeholder="data">
+        </mat-form-field>        
+
+        <mat-form-field>
+            <input formControlName="cpf" type="number"  matInput placeholder="cpf">
+        </mat-form-field>        
+
+        <mat-form-field>
+            <input formControlName="telephone"  type="tel" matInput placeholder="telephone">
+        </mat-form-field>        
+            
+        <mat-form-field>
+            <input formControlName="address"   type="text" matInput placeholder="address">
+        </mat-form-field>        
+    </form>
+    <button mat-raised-button (click)="updateProduct()" color="primary">
+        Atualizar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+
+</mat-card>
